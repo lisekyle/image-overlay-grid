@@ -1,0 +1,36 @@
+// ========================================
+// Variables
+// ========================================
+[class*='c'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+    }
+
+// ========================================
+// Base
+// ========================================
+section.image-overlay {
+    max-width: 960px;
+    max-height: 640px;
+}
+
+div.image-overlay__image {
+   position: relative;
+
+   img {
+    max-width: 960px;
+    max-height: 640px;
+    width: 100%;
+    height: auto;
+   }
+}
+
+
+
+
+
+
+
+

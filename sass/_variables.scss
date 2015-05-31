@@ -1,0 +1,30 @@
+// grid variables
+$columns: 10;
+$rows: 10;
+$max-width: 960px;
+$row-prefix: r;
+$column-prefix: c;
+
+// typography
+$h2-size: 22px;
+
+// breakpoints
+$breakpoint-small: 'only screen and (max-width: 480px)';
+$breakpoint-medium: 'only screen and (min-width: 480px) and (max-width: 800px)';
+
+@media #{$breakpoint-medium} {
+    .image-overlay__text {
+        h2 {
+            font-size: $h2-size / 1.25;
+        }
+    }
+}
+
+@media #{$breakpoint-small} {
+    .image-overlay__text {
+        h2 {
+            font-size: $h2-size / 1.95;
+        }
+    }
+}
+

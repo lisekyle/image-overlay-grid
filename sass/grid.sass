@@ -1,0 +1,46 @@
+@import "variables"
+@import "mixins"
+
+*,
+*:after,
+*:before
+    margin: 0
+    padding: 0
+    @include border-box
+
+img
+    width: auto
+    max-width: 100%
+    height: auto !important
+
+.image-overlay
+    width: 100%
+    max-width: $max-width
+    position: relative
+
+.image-overlay,
+.image-overlay__wrapper,
+.image-overlay__text
+    @extend %clearfix
+
+.image-overlay__text
+    position: absolute
+    color: white
+    padding-left: 15px
+    text-align: center
+    font-family: Arial
+    line-height: 1.5
+
+// Grid Loop
+=build-grid
+    @for $i from 1 through $columns // loop defines columns. c1, c2, c3 . . .
+        .#{$column-prefix+$i}
+            margin-left: 100% / $columns * ($i - 1)
+
+    $vertical-grid: true !default
+    @if $vertical-grid // Generate only if $vertical-grid is true. This code is usually not nessisary.
+    @for $i from 1 through $rows // loop defines rows. r1, r2, r3 . . .
+        .#{$row-prefix+$i}
+            top: 100% / $rows * ($i - 1)
++build-grid
+
