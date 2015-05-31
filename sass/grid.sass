@@ -38,7 +38,7 @@ img
             margin-left: 100% / $columns * ($i - 1)
 
     $vertical-grid: true !default
-    @if $vertical-grid // Generate only if $vertical-grid is true. This code is usually not nessisary.
+    @if $vertical-grid
     @for $i from 1 through $rows // loop defines rows. r1, r2, r3 . . .
         .#{$row-prefix+$i}
             top: 100% / $rows * ($i - 1)
