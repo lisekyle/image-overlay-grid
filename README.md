@@ -1,7 +1,7 @@
 # Jellyvision Audition
-## Modern UI Engineer
+**Modern UI Engineer**
 
-This framework places text over an image on a vertical and horizontal grid. It uses BEM notation, Sass Loops & Operators, and super-fun-happy Daria quotes.
+This framework places text over an image on a vertical and horizontal grid. It uses [BEM notation](https://en.bem.info/method/definitions/), [SassScript](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#control_directives__expressions), and super-fun-happy Daria quotes.
 
 Each image overlay section inherits a `$max-width` variable (which can be changed based on the image size). In this scenario, all our images are 960px.
 
@@ -13,7 +13,7 @@ Our columns and rows are set with `$columns` and `$rows` (in `_variables.scss`),
             margin-left: 100% / $columns * ($i - 1)
 
     $vertical-grid: true !default
-    @if $vertical-grid // Generate only if $vertical-grid is true. This code is usually not nessisary.
+    @if $vertical-grid true.
     @for $i from 1 through $rows // loop defines rows. r1, r2, r3 . . .
         .#{$row-prefix+$i}
             top: 100% / $rows * ($i - 1)
