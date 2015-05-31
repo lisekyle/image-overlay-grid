@@ -1,6 +1,6 @@
 # Image Overlay Grid
 
-!(https://media0.giphy.com/media/S0l1Ah4cjIdwY/200_s.gif)
+![daria](https://media0.giphy.com/media/S0l1Ah4cjIdwY/200_s.gif)
 
 This framework places text over an image on a vertical and horizontal grid. It uses [BEM notation](https://en.bem.info/method/definitions/), [SassScript](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#control_directives__expressions), and super-fun-happy Daria quotes.
 
